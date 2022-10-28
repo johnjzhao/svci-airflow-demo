@@ -12,7 +12,7 @@ services:
   webserver:
     image: zhaojohn96/docker-airflow:1.0.1
     build:
-      context: zhaojohn96/docker-airflow:1.0.1
+      context: https://github.com/johnjzhao/docker-airflow.git
       dockerfile: Dockerfile
       args:
         AIRFLOW_DEPS: gcp_api,s3
